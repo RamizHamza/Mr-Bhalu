@@ -33,6 +33,8 @@ const replayBtn = document.getElementById("replayBtn");
 
 const homeBtn = document.getElementById("homeBtn");
 
+window.scrollTo(0, 0);
+
 /* ==========================
    PAGE SYSTEM
 ========================== */
@@ -55,13 +57,9 @@ function showPage(id){
 
     currentPage.classList.add("active");
 
-    window.scrollTo({
-
-        top:0,
-
-        behavior:"smooth"
-
-    });
+    window.scrollTo(0, 0);
+document.documentElement.scrollTop = 0;
+document.body.scrollTop = 0;
 
 }
 
@@ -495,3 +493,4 @@ skipVideoBtn.addEventListener("click",()=>{
 
 
 console.log("💙 Birthday Website V2 Loaded Successfully");
+
